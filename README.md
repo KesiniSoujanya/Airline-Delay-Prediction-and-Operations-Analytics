@@ -1,146 +1,121 @@
-# Airline-Delay-Prediction-and-Operations-Analytics
-✈ Airline Delay Prediction & Operations Analytics
-📌 Project Overview
+# ✈ Airline Delay Prediction & Operations Analytics
 
-Airline delays significantly affect airline operations and passenger satisfaction.
-This project uses machine learning techniques and operational analytics to predict flight delays and analyze delay patterns across airlines and routes.
+## Project Overview
+Airline delays significantly impact airline operations and passenger satisfaction.  
+This project uses machine learning and operational analytics to predict flight delays and analyze delay patterns across airlines and routes.
 
-The system processes historical flight data, applies data preprocessing, feature engineering, and multiple ML strategies, and generates predictive insights along with analytical visualizations.
+The system processes historical flight data, applies data preprocessing, feature engineering, and multiple machine learning strategies to generate predictive insights and visual analytics.
 
-🎯 Project Objectives
+---
 
-Predict whether a flight will be delayed or on-time
+## Objectives
+- Predict whether a flight will be delayed or on-time
+- Handle class imbalance using SMOTE and RSMOTE
+- Compare multiple machine learning strategies
+- Store processed data using MySQL database
+- Generate operational analytics visualizations
 
-Handle class imbalance using SMOTE and RSMOTE
+---
 
-Compare different machine learning strategies
+## Dataset
+The dataset contains **100,000 airline flight records** used for delay prediction analysis.
 
-Store processed data and predictions using MySQL database
+Dataset link (Kaggle):
+**https://www.kaggle.com/datasets/kesinisoujanya/airline-flight-delay-dataset-100k-records**
 
-Generate operational analytics visualizations
+Features included in the dataset:
 
-📊 Dataset
+| Feature | Description |
+|--------|-------------|
+| OP_CARRIER | Airline carrier code |
+| ORIGIN | Origin airport |
+| DEST | Destination airport |
+| CRS_DEP_TIME | Scheduled departure time |
+| DISTANCE | Flight distance |
+| DEP_DELAY | Departure delay in minutes |
+| DELAY | Target variable (1 = Delayed, 0 = On Time) |
 
-The dataset contains 100,000 airline flight records used for delay prediction analysis.
+---
 
-📥 Download Dataset from Kaggle:
-
-https://www.kaggle.com/datasets/YOUR_USERNAME/airline-flight-delay-dataset
-
-Dataset features include:
-
-Feature	Description
-OP_CARRIER	Airline carrier code
-ORIGIN	Origin airport
-DEST	Destination airport
-CRS_DEP_TIME	Scheduled departure time
-DISTANCE	Flight distance
-DEP_DELAY	Departure delay in minutes
-DELAY	Target variable (1 = Delayed, 0 = On-Time)
-⚙️ Machine Learning Models
-
+## Machine Learning Models
 The following strategies were implemented:
 
-SMOTE + Random Forest
+- SMOTE + Random Forest
+- RSMOTE + Random Forest
+- XGBoost
+- GridSearch XGBoost
 
-RSMOTE + Random Forest
+---
 
-XGBoost
+## Best Model Performance
 
-GridSearch XGBoost
+| Metric | Value |
+|------|------|
+| Model | XGBoost |
+| Accuracy | 92.98% |
+| F1 Score | 78.54% |
+| ROC-AUC | 0.93 |
 
-🏆 Best Model Performance
-Metric	Value
-Model	XGBoost
-Accuracy	92.98%
-F1 Score	78.54%
-ROC-AUC	0.93
+XGBoost achieved the best performance among all models.
 
-XGBoost achieved the best predictive performance among all models.
+---
 
-📈 Visualizations
+## Visualizations
+The project includes several analytics visualizations:
 
-The project includes multiple analytical visualizations:
-
-Confusion Matrix
-
-ROC Curve
-
-Airline Delay Rate Analysis
-
-Flight Route Delay Heatmap
-
-Model Strategy Comparison
-
-Flight Route Delay Network Graph
+- Confusion Matrix
+- ROC Curve
+- Airline Delay Rate Analysis
+- Flight Route Delay Heatmap
+- Model Strategy Comparison
+- Flight Route Delay Network Graph
 
 These visualizations help analyze airline delay patterns and operational insights.
 
-🗄 SQL Database Integration
+---
 
-The project integrates MySQL database storage for managing flight data and predictions.
+## SQL Database Integration
+The project integrates a MySQL database to store processed flight data and prediction results.
 
 Technologies used:
+- MySQL
+- SQLAlchemy
+- PyMySQL
 
-MySQL
+---
 
-SQLAlchemy
+## Technologies Used
 
-PyMySQL
+Programming Language:
+Python
 
-SQL queries are available in:
+Libraries:
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Imbalanced-learn
+- Matplotlib
+- Seaborn
+- NetworkX
+- SQLAlchemy
+- PyMySQL
 
-sql/queries.sql
-🛠 Technologies Used
-Category	Tools
-Programming	Python
-Data Processing	Pandas, NumPy
-Machine Learning	Scikit-learn, XGBoost
-Imbalanced Learning	SMOTE, RSMOTE
-Visualization	Matplotlib, Seaborn
-Network Analysis	NetworkX
-Database	MySQL
-Development	Jupyter Notebook
-📂 Project Structure
-airline-delay-prediction/
-│
-├── dataset/
-│   └── flights.zip
-│
-├── notebooks/
-│   └── airline_delay_prediction.ipynb
-│
-├── sql/
-│   └── queries.sql
-│
-├── images/
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   ├── heatmap.png
-│
-├── requirements.txt
-├── README.md
-🚀 Installation
+Development Environment:
+- Jupyter Notebook
 
-Clone the repository:
+Database:
+- MySQL
 
-git clone https://github.com/YOUR_USERNAME/airline-delay-prediction.git
+---
 
-Install dependencies:
+## Base Research Paper
+Chakrabarty, N.  
+"A Data Mining Approach to Flight Arrival Delay Prediction", IEEE, 2019.
 
-pip install -r requirements.txt
+---
 
-Run the notebook:
-
-jupyter notebook
-📚 Base Research Paper
-
-Chakrabarty, N.
-"A Data Mining Approach to Flight Arrival Delay Prediction"
-IEEE, 2019.
-
-👨‍💻 Author
-
-Souji
-B.Tech Final Year Project
+## Author
+### Ramisetti Kesini Soujanya
+> B.Tech Final Year Project  
 Airline Delay Prediction & Operations Analytics
