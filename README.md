@@ -105,7 +105,7 @@ Development Environment:
 - Jupyter Notebook
 
 Database:
-- MySQL
+- MySQL Workbench 8.0 CE
 
 ---
 
