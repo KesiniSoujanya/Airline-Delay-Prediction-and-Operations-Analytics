@@ -115,7 +115,11 @@ Chakrabarty, N.
 
 ---
 
-## Author
-### Ramisetti Kesini Soujanya
+## Team Members
+### Ramisetti Kesini Soujanya             (Team Lead)
+### Thorathi Likitha                      (Team Member)
+### Polumuru Hemasri                      (Team Member)
+### Patnaikuni Venkata Sai Mohan Avinash  (Team Member)
+
 > B.Tech Final Year Project  
 Airline Delay Prediction & Operations Analytics
